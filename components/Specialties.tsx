@@ -3,25 +3,25 @@ import Image from "next/image";
 export default function Specialties() {
     const specialties = [
         {
-            title: "Self-Esteem",
-            description: "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
-            image: "https://images.unsplash.com/photo-1510940788648-9c488f785a96?auto=format&fit=crop&w=600&q=80" // Man by window/thoughtful
+            title: "Anxiety & Panic",
+            description: "Specializing in support for high-achieving adults struggling with constant worry, overthinking, and the physiological tension of panic.",
+            image: "/specialties01.avif"
         },
         {
-            title: "Relationships",
-            description: "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
-            image: "https://images.unsplash.com/photo-1621125211029-23c27181f72d?auto=format&fit=crop&w=600&q=80" // Woman sitting/contemplative
+            title: "Trauma Recovery",
+            description: "Utilizing evidence-based methods like EMDR and CBT to help clients navigate the impact of past experiences and reclaim a sense of safety.",
+            image: "/specialties02.avif"
         },
         {
-            title: "Burnout",
-            description: "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
-            image: "https://images.unsplash.com/photo-1484981138541-3d074aa97716?auto=format&fit=crop&w=600&q=80" // Organizing/shelf/calm
+            title: "Burnout & Perfectionism",
+            description: "Helping entrepreneurs and creatives reconnect with themselves while developing sustainable ways of managing high internal pressure.",
+            image: "/specialties03.avif"
         }
     ];
 
     return (
-        <section className=" py-16 md:py-24">
-            <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
+        <section className=" py-16 md:py-[6.3rem]">
+            <div className="mx-auto max-w-8xl px-6 sm:px-12">
                 <h2
                     className="mb-12 text-center font-heading text-4xl font-medium text-[#223614] md:mb-16 md:text-5xl"
                     style={{ fontFamily: "var(--font-playfair)" }}
@@ -29,23 +29,23 @@ export default function Specialties() {
                     My Specialties
                 </h2>
 
-                <div className="grid gap-6 md:grid-cols-3 md:gap-8">
+                <div className="grid gap-6 md:grid-cols-3">
                     {specialties.map((item, index) => (
                         <div
                             key={index}
-                            className="flex flex-col justify-between border border-[#223614]/20 bg-[#e8e4dc]/50 p-4 text-left transition-colors hover:bg-[#e8e4dc]"
+                            className="flex flex-col justify-between border border-black bg-secondary/40 p-4 text-left"
                         >
                             <div>
-                                <h3 className="mb-4 text-xl font-bold text-[#223614] md:text-2xl">
+                                <h3 className="mb-5 lg:mb-6 xl:mb-9 text-xl font-bold text-[#223614]">
                                     {item.title}
                                 </h3>
-                                <p className="mb-8 text-sm leading-relaxed text-[#223614]/90 md:text-base">
+                                <p className="mb-12 text-sm leading-relaxed text-[#223614]/90">
                                     {item.description}
                                 </p>
                             </div>
 
-                            <div className="mt-auto flex justify-center">
-                                <div className="relative h-52 w-52 overflow-hidden rounded-full border-4 border-white/30 shadow-sm md:h-56 md:w-56">
+                            <div className="mt-auto md:-mt-7 xl:-mt-0 flex justify-center">
+                                <div className="relative h-60 w-60 overflow-hidden rounded-full md:h-36 md:w-36 lg:h-52 lg:w-52 xl:h-80 xl:w-80">
                                     <Image
                                         src={item.image}
                                         alt={item.title}
