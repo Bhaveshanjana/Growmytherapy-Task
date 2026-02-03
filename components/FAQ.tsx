@@ -9,15 +9,15 @@ export default function FAQ() {
     const faqs = [
         {
             question: "Do you take insurance?",
-            answer: "I am an out-of-network provider. This means I do not bill insurance directly, but I can provide you with a monthly superbill to submit to your insurance company for potential reimbursement."
+            answer: "Answer goes here."
         },
         {
             question: "What are your rates?",
-            answer: "My fee for a 50-minute individual therapy session is $250. Limited sliding scale spots are available based on financial need."
+            answer: "Answer goes here."
         },
         {
             question: "Do you have any openings?",
-            answer: "I currently have a few openings for new clients. Please schedule a consultation call so we can discuss your needs and see if we're a good fit."
+            answer: "Answer goes here."
         }
     ];
 
@@ -26,15 +26,15 @@ export default function FAQ() {
     };
 
     return (
-        <section className="bg-[#fbf6f1] py-16 md:py-24">
-            <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
-                <div className="grid gap-12 md:grid-cols-2 md:items-start lg:gap-24">
+        <section className="bg-background py-16 md:py-36 lg:py-48 xl:py-12 xl:pb-40">
+            <div className="mx-auto max-w-8xl px-6 md:px-6 lg:px-16">
+                <div className="grid gap-12 md:grid-cols-2 md:items-start lg:gap-20 xl:gap-6">
 
                     {/* Left: Arch Image (Desktop) / Top: Image (Mobile) */}
-                    <div className="flex justify-center md:justify-start">
-                        <div className="relative h-[400px] w-full max-w-sm overflow-hidden rounded-t-[500px] md:h-[500px] bg-black">
+                    <div className="flex justify-center md:justify-start md:pl-24">
+                        <div className="relative h-[200px] w-[35%] sm:w-full md:h-[350px] lg:h-[470px] md:translate-y-2 lg:translate-y-14 xl:h-[700px] max-w-md overflow-hidden rounded-t-[500px] bg-black">
                             <Image
-                                src="https://images.unsplash.com/photo-1586752002496-cd05ccef47f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhlcmFwaXN0fGVufDB8fDB8fHww"
+                                src="/faq-image.avif"
                                 alt="Dried flowers in vase"
                                 fill
                                 className="object-cover"
@@ -43,9 +43,9 @@ export default function FAQ() {
                     </div>
 
                     {/* Right: FAQ Content */}
-                    <div className="flex flex-col">
+                    <div className="flex flex-col lg:mt-32">
                         <h2
-                            className="mb-8 font-heading text-4xl font-medium text-[#223614] md:mb-12 md:text-5xl"
+                            className="mb-8 font-heading text-4xl font-medium text-[#223614] xl:mb-12 xl:text-5xl"
                             style={{ fontFamily: "var(--font-playfair)" }}
                         >
                             FAQs
@@ -56,12 +56,12 @@ export default function FAQ() {
                                 <div key={index} className="border-b border-[#223614]/20">
                                     <button
                                         onClick={() => toggleFAQ(index)}
-                                        className="flex w-full items-center gap-6 py-6 text-left"
+                                        className="flex w-full items-center gap-8 py-6 md:py-4 lg:py-6 text-left"
                                     >
-                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center text-2xl font-light text-[#223614]">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center text-6xl font-extralight text-[#223614]">
                                             {openIndex === index ? "−" : "+"}
                                         </span>
-                                        <span className="text-xl font-medium text-[#223614] md:text-2xl">
+                                        <span className="text-3xl font-medium text-[#223614] lg:text-3xl xl:text-4xl">
                                             {faq.question}
                                         </span>
                                     </button>
@@ -70,7 +70,7 @@ export default function FAQ() {
                                         className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
                                             }`}
                                     >
-                                        <p className="pb-6 pl-12 text-base leading-relaxed text-[#223614]/80 md:text-lg">
+                                        <p className="pb-6 text-base leading-relaxed text-[#223614]/80 md:text-lg">
                                             {faq.answer}
                                         </p>
                                     </div>
