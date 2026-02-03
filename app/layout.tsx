@@ -27,7 +27,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Maya Reynolds, PsyD | Licensed Clinical Psychologist",
+  title: "Dr. Maya Reynolds Template",
   description: "Licensed Clinical Psychologist in Santa Monica, California. Offering therapy for anxiety, trauma, burnout, and stress.",
 };
 
