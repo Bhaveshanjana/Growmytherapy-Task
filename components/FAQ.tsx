@@ -9,15 +9,15 @@ export default function FAQ() {
     const faqs = [
         {
             question: "Do you take insurance?",
-            answer: "Answer goes here."
+            answer: "I am an out-of-network provider. I can provide a superbill for you to submit to your insurance for potential reimbursement."
         },
         {
             question: "What are your rates?",
-            answer: "Answer goes here."
+            answer: "My individual therapy sessions are $250 for 50 minutes. I offer a limited number of sliding scale slots."
         },
         {
             question: "Do you have any openings?",
-            answer: "Answer goes here."
+            answer: "Yes, I am currently accepting new clients for both in-person sessions in Santa Monica and virtual teletherapy."
         }
     ];
 
