@@ -21,7 +21,7 @@ export default function Introduction() {
                                 className="mb-8 text-base leading-relaxed text-[#223614] md:text-lg lg:text-xl"
                                 style={{ fontFamily: "var(--font-lato)" }}
                             >
-                                My goal is not just symptom relief, but helping you develop insight, resilience, and a stronger relationship with yourself. Together, we can create a space to slow down, reconnect, and develop more sustainable ways of living and working.
+                                Based in Santa Monica, my goal is not just symptom relief, but helping you develop insight, resilience, and a stronger relationship with yourself. Together, we can create a space to slow down, reconnect, and develop more sustainable ways of living and working.
                             </p>
 
                             <Link
