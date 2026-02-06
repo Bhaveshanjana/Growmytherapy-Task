@@ -27,8 +27,29 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Maya Reynolds Template",
+  title: "Dr. Maya Reynolds | Licensed Clinical Psychologist",
   description: "Licensed Clinical Psychologist in Santa Monica, California. Offering therapy for anxiety, trauma, burnout, and stress.",
+  keywords: ["Clinical Psychologist", "Santa Monica", "Therapy", "Anxiety", "Trauma", "Burnout", "Mental Health", "Dr. Maya Reynolds", "California", "Psychotherapy"],
+  metadataBase: new URL("https://reynolds-template.vercel.app/"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Dr. Maya Reynolds | Licensed Clinical Psychologist",
+    description: "Licensed Clinical Psychologist in Santa Monica, California. Offering therapy for anxiety, trauma, burnout, and stress.",
+    url: "/",
+    siteName: "Dr. Maya Reynolds",
+    images: [
+      {
+        url: "/MayaReynolds.png",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Maya Reynolds",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
